@@ -1,5 +1,5 @@
 "use strict";
-const Name = 'Nguyễn Đình Dương';
+const username = 'Nguyễn Đình Dương';
 const age = 19;
 const job = "student";
-console.log(Name, age, job);
+console.log(username, age, job);
