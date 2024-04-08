@@ -1,6 +1,6 @@
-const add = (g, h) => {
-    const numA = typeof g === 'string' ? parseFloat(g) : g;
-    const numB = typeof h === 'string' ? parseFloat(h) : g;
+let add = (g: number | string, h: number | string): number | string => {
+    let numA: number = typeof g === 'string' ? parseFloat(g) : g;
+    let numB: number = typeof h === 'string' ? parseFloat(h) : h;
     if (!isNaN(numA) && !isNaN(numB)) {
         return numA + numB;
     }
@@ -8,9 +8,10 @@ const add = (g, h) => {
         return 'Invalid input';
     }
 };
-const subtract = (g, h) => {
-    const numA = typeof g === 'string' ? parseFloat(g) : g;
-    const numB = typeof h === 'string' ? parseFloat(h) : h;
+
+let subtract = (g: number | string, h: number | string): number | string => {
+    let numA: number = typeof g === 'string' ? parseFloat(g) : g;
+    let numB: number = typeof h === 'string' ? parseFloat(h) : h;
     if (!isNaN(numA) && !isNaN(numB)) {
         return numA - numB;
     }
@@ -18,9 +19,10 @@ const subtract = (g, h) => {
         return 'Invalid input';
     }
 };
-const multiply = (g, h) => {
-    const numA = typeof g === 'string' ? parseFloat(g) : g;
-    const numB = typeof h === 'string' ? parseFloat(h) : h;
+
+let multiply = (g: number | string, h: number | string): number | string => {
+    let numA: number = typeof g === 'string' ? parseFloat(g) : g;
+    let numB: number = typeof h === 'string' ? parseFloat(h) : h;
     if (!isNaN(numA) && !isNaN(numB)) {
         return numA * numB;
     }
@@ -28,9 +30,10 @@ const multiply = (g, h) => {
         return 'Invalid input';
     }
 };
-const divide = (g, h) => {
-    const numA = typeof g === 'string' ? parseFloat(g) : g;
-    const numB = typeof h === 'string' ? parseFloat(h) : h;
+
+let divide = (g: number | string, h: number | string): number | string => {
+    let numA: number = typeof g === 'string' ? parseFloat(g) : g;
+    let numB: number = typeof h === 'string' ? parseFloat(h) : h;
     if (!isNaN(numA) && !isNaN(numB)) {
         if (numB !== 0) {
             return numA / numB;
@@ -43,6 +46,7 @@ const divide = (g, h) => {
         return 'Invalid input';
     }
 };
+
 console.log(add(5, 3)); 
 console.log(add('5', 3)); 
 console.log(add('abc', 3)); 
