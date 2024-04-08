@@ -1,7 +1,7 @@
 "use strict";
-const add = (g, h) => {
-    const numA = typeof g === 'string' ? parseFloat(g) : g;
-    const numB = typeof h === 'string' ? parseFloat(h) : g;
+let add = (g, h) => {
+    let numA = typeof g === 'string' ? parseFloat(g) : g;
+    let numB = typeof h === 'string' ? parseFloat(h) : h;
     if (!isNaN(numA) && !isNaN(numB)) {
         return numA + numB;
     }
@@ -9,9 +9,9 @@ const add = (g, h) => {
         return 'Invalid input';
     }
 };
-const subtract = (g, h) => {
-    const numA = typeof g === 'string' ? parseFloat(g) : g;
-    const numB = typeof h === 'string' ? parseFloat(h) : h;
+let subtract = (g, h) => {
+    let numA = typeof g === 'string' ? parseFloat(g) : g;
+    let numB = typeof h === 'string' ? parseFloat(h) : h;
     if (!isNaN(numA) && !isNaN(numB)) {
         return numA - numB;
     }
@@ -19,9 +19,9 @@ const subtract = (g, h) => {
         return 'Invalid input';
     }
 };
-const multiply = (g, h) => {
-    const numA = typeof g === 'string' ? parseFloat(g) : g;
-    const numB = typeof h === 'string' ? parseFloat(h) : h;
+let multiply = (g, h) => {
+    let numA = typeof g === 'string' ? parseFloat(g) : g;
+    let numB = typeof h === 'string' ? parseFloat(h) : h;
     if (!isNaN(numA) && !isNaN(numB)) {
         return numA * numB;
     }
@@ -29,9 +29,9 @@ const multiply = (g, h) => {
         return 'Invalid input';
     }
 };
-const divide = (g, h) => {
-    const numA = typeof g === 'string' ? parseFloat(g) : g;
-    const numB = typeof h === 'string' ? parseFloat(h) : h;
+let divide = (g, h) => {
+    let numA = typeof g === 'string' ? parseFloat(g) : g;
+    let numB = typeof h === 'string' ? parseFloat(h) : h;
     if (!isNaN(numA) && !isNaN(numB)) {
         if (numB !== 0) {
             return numA / numB;
