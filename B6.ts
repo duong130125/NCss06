@@ -1,6 +1,6 @@
-let n:number = 2;
+let n:number = 8;
 
-let m:string = "2";
+let m:string = "8";
 
 // console.log(n==m);
 

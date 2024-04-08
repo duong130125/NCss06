@@ -1,13 +1,13 @@
-let t1:undefined;
+let d1:undefined;
 
-let t2;
+let d2;
 
-let t3:number = 0;
+let d3:number = 0;
 
-console.log(t1);
+console.log(d1);
 
-console.log(t2);
+console.log(d2);
 
-console.log(t3);
+console.log(d3);
 
 //==> Khi không để kiểu dữ liệu thì máy sẽ mặc định đó là undefined

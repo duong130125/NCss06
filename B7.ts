@@ -1,5 +1,5 @@
-let num1: number = 10;
-let num2: number = 25;
+let num1: number = 45;
+let num2: number = 22;
 let num3: number;
 
 num3 = num1 + num2;

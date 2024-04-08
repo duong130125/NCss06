@@ -4,7 +4,7 @@ let fullName:string;
 
 fName = "Nguyễn";
 
-lName = "Sơn";
+lName = "Dương";
 
 if(fName[0].toUpperCase()&&lName[0].toUpperCase()){
     fullName = fName + " " + lName;
